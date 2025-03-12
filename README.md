@@ -38,13 +38,13 @@ For a full-blown software, I would improve:
 - Erstelle die notwendingen Services, mindestens zwei! Entscheide, wo die Services anhand der fachlichen Domäne und Anforderungen aufgeteilt werden.
 > Ich habe das CSV-Parsing in einen Service gepackt (normalerweise wäre das eher eine Utility), und die fachliche Berechnung in den anderen Service
 - Verwende ein Test-Framework und erläutere dein Konzept zur Wahrung der Softwarequalität.
-> Junit 5 + Restassured wurde benutzt, um eine exemplarische Testabdeckung von Unit- und Integrationstests aufzuzeigen. Idealerweise decken die Tests einen großteil der Funktionalität ab, und die UI sollte auch durch E2E-Tests abgedeckt werden.
+> Junit 5 + Restassured wurde benutzt, um eine exemplarische Testabdeckung von Unit- und Integrationstests aufzuzeigen. Idealerweise decken die Tests einen großteil der Funktionalität ab, und die UI sollte auch durch E2E-Tests abgedeckt werden. Zudem gäbe es idealerweise eine CICD-Pipeline, um stets Qualitäts-Gates zu prüfen, z.B. auch mittels statischer Code-Analyse
 - Wie erfolgt die Kommunikation zwischen den Services?
-> Die M2M Kommunikation erfolgt mittels JSON-Format (ohne Authentifizierung, ohne Circuit-Braker, ohne SLAs, ...)
+> Die M2M Kommunikation erfolgt über eine API mittels JSON-Format (ohne Authentifizierung)
 - Erstelle sowohl Code als auch Dokumentation.
 > Der Java 21 code benutzt das Quarkus-Framework mit Maven als Build-Tool, Docker zum Starten einer Postgres Datenbank, Dokumentation ist als Markdown in dieser Readme.md als auch als JavaDoc im SourceCode
 - (Optional) erstelle eine Web-basierte Oberfläche.
-> Die Oberfläche ist aufgrund SSR inbegriffen
+> Die Oberfläche ist mittels Templating inbegriffen
 
 ## Aufgabenstellung:
 
