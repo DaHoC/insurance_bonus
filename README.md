@@ -2,7 +2,9 @@
 
 ## Run instructions
 
-./mvnw clean install quarkus:dev
+Run in CLI:
+
+`./mvnw clean install quarkus:dev`
 
 Wait for the service to be up, then open 
 
@@ -40,7 +42,7 @@ For a full-blown software, I would improve:
 - Wie erfolgt die Kommunikation zwischen den Services?
 > Die M2M Kommunikation erfolgt mittels JSON-Format (ohne Authentifizierung, ohne Circuit-Braker, ohne SLAs, ...)
 - Erstelle sowohl Code als auch Dokumentation.
-> Der Java 21 code benutzt das Quarkus-Framework mit Maven als Build-Tool, Dokumentation ist als Markdown in dieser Readme.md als auch als JavaDoc im SourceCode
+> Der Java 21 code benutzt das Quarkus-Framework mit Maven als Build-Tool, Docker zum Starten einer Postgres Datenbank, Dokumentation ist als Markdown in dieser Readme.md als auch als JavaDoc im SourceCode
 - (Optional) erstelle eine Web-basierte Oberfläche.
 > Die Oberfläche ist aufgrund SSR inbegriffen
 
